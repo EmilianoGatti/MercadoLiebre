@@ -137,15 +137,16 @@ footer section{
     text-align: center;
     margin-top: 10px;
 }
+footer i{
+    color:    #03264C;
+}
 footer p{
     color:    #666;
 }
 footer h4{
     color:    #666;
 }
-footer i{
-    color:    #666;
-}
+
 footer section div{
     width: 100%;
     text-align: center;
