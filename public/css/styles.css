@@ -1,13 +1,13 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    box-sizing:border-box
 }
-
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
+    display: block;
+    font-size: 12px;
 }
-
+/*          header          */
 h3{
     font-size: 24px;
 }
@@ -18,6 +18,17 @@ h4{
 p{
     font-size: 12px;
 }
+p .precio{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.descuento,
+.descripcion{
+    font-size: 16px;
+    font-weight: normal;
+}
+
 div.top-header{
     padding: 5%;
 }
@@ -25,20 +36,26 @@ div.top-header{
 header{
     background-color: #EAC926;
 }
+.navbar,
+.credit-card,
 .searchbar{
     text-align: center;
     align-content: center;
+    vertical-align: center;
+    border: 1px solid #0001;
+    width: 100%;
+    
 }
 .loginbar{
     text-align: center;
     align-content: center;
+    width: 100%;
 }
-
-header div.logo{
-    width: 50%;
+i .loginbar{
+    padding-bottom: 10px;
 }
-
 header div.logo{
+    width: 50vw;
     padding: 10px;
 }
 header nav{
@@ -51,27 +68,6 @@ header ul li a{
     text-decoration: none;
     color: #000;
 }
-header .form .input{
-    background-color: #FFF;
-    border: 1px solid #000;
-    outline: none;
-    color: #666;
-    padding: 2px;
-}
-
-header .form .submit{
-    background-color: #FFF;
-    border: 1px solid #000;
-    color: #666;
-    width: 10%;
-}
-
-header div.top-header p{
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
-}
-
 div.burger-menu{
     text-align: center;
 }
@@ -83,52 +79,10 @@ div.burger-menu i{
     font-size: 20px;
     margin: 10px 0px 20px 0px;
     padding: 15px;
+    text-align: center;
 }
+/*    footer          */
 
-article div.main-article{
-    width: 100%;
-    box-shadow: 0px 0px 10px rgb(100, 50, 75);
-}
-.main-section-article-descripcion{
-    font-size: 24px;
-}
-
-p .precio{
-    font-size: 18px;
-    font-weight: normal;
-}
-
-.descuento,
-.descripcion{
-    font-size: 16px;
-    font-weight: normal;
-}
-
-h3,
-.description{
-    color: #666;
-}
-
-section.banner img{
-    width: 100%;
-}
-
-main{
-    width: 90%;
-}
-
-main section article{
-    background-color: #fff;
-}
-
-main section article img{
-    width: 100%;
-}
-
-main section article i,
-.descuento{
-    color: #39b54a;
-}
 footer{
     background-color:white;
 }
@@ -147,8 +101,110 @@ footer h4{
     color:    #666;
 }
 
+div .footer-container{
+    width: 100%;
+    align-content: center;
+}
+/*      body        */
+h2{
+    text-align: center;
+}
+main section article{
+    width: 80%;
+    align-content: center;
+    padding: 10px;
+    margin : auto;
+}
+/*
 footer section div{
     width: 100%;
     text-align: center;
     margin-top: 10px;
 }
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+main section article .descripcion i{
+    display: block;
+    font-size:16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+main section article .main-section-article-descripcion{
+    border-top: 1px solid #ebebeb;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 24px;
+}
+article .ofertas{
+    width: 100%;
+    margin:10px;
+    box-shadow: 0px 0px 10px rgb(100, 50, 75);
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+}
+
+main section article{
+    background-color: #ffffff;
+    align-content:center ;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.descuento{
+    margin-top: 10px;
+    color: #39b54a;
+}
+
+@media (min-width: 361px) {
+    main section article .descripcion{
+        display:none;
+} 
+  }
+  @media (min-width: 769px) {
+   article{
+        box-shadow: 10px 10px 10px 10px rgb(100, 50, 75);
+    }
+  }*/
