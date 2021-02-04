@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Liebre</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+<!--        <link rel="stylesheet" href="css/normalize.css">-->
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+    <header>
+    </header>
+    <main>
+        <form>
+            <div class="Register">
+                <label for="NombreyApellido">Nombre y Apellido:</label>
+                <br>
+                <input type="text" name="NombreyApellido" placeholder="escribe aqui tu nombre y apellido">
+                <br>
+                <label for="NombreUsuario">Nombre de usuari@:</label>
+                <br>
+                <input type="text" name="NombreUsuario" placeholder="escribe aqui tu nombre de usuario">
+                <br>
+                <label for="NombreUsuario">Fecha de nacimiento:</label>
+                <br>
+                <input type="date" name="FechaNacimiento">
+                <br>
+                <label for="Domicilio">Domicilio:</label>
+                <br>
+                <input type="text" name="Domicilio" placeholder="escribe aqui tu nombre de usuario">
+                <br>
+                <h4>Perfil del usuario:</h4>
+                <div class="perfil">
+                    <ul>
+                        <il><input type="radio" id="perfil" name="comprador" value="vendedor" checked="true"><label for="comprador">Comprador</label></il><br>
+                        <il><input type="radio" id="comprador" name="comprador" value="comprador"></il><label for="vendedor">Vendedor</label>
+                    </ul>
+                    <br>
+                </div>
+                <h4>Intereses:</h4>
+                <div class="intereses">
+                    <ul>
+                        <il><input type="checkbox" id="electro" name="electro" value="electro"></il>
+                        <il><label for="electro"> Electro</label><br></il>
+                        <il><input type="checkbox" id="moda" name="moda" value="moda">
+                        <il><label for="moda"> Moda</label><br></il>
+                        <il><input type="checkbox" id="hogar" name="hogar" value="hogar">
+                        <il><label for="hogar"> Hogar</label><br></il>
+                        <il><input type="checkbox" id="juguetes" name="juguetes" value="juguetes">
+                        <il><label for="juguetes"> Juguetería</label><br></il>
+                        <il><input type="checkbox" id="vidasana" name="vidasana" value="vidasana">
+                        <il><label for="vidasana"> Vida Sana</label></il>
+                    </ul>
+                </div>
+                <br>
+                <h4>Foto de Usuario</h4>
+                    <br>
+                    <div class="foto">
+                    <i></i>
+                    </div>
+                    <div class="Register">
+                        <label for="Password" >Clave:</label>
+                        <br>
+                        <input type="password" name="Password" placeholder="Ingrese su clave">
+                        <br>
+                        <label for="PasswordConfirm" >Confirme su clave:</label>
+                        <br>
+                        <input type="password" name="PasswordConfirm" placeholder="Repita su clave">
+                        <br>
+                        <div class="intereses">
+                        <input class="boton" type="submit"><input class="boton" type="reset">
+                    </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+    </footer>
+</html>

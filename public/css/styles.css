@@ -6,6 +6,8 @@ body{
     background-color: #ebebeb;
     display: block;
     font-size: 12px;
+    margin: 5px;
+    padding: 2px;
 }
 /*          header          */
 h3{
@@ -14,7 +16,6 @@ h3{
 h4{
     font-size: 12px;
 }
-
 p{
     font-size: 12px;
 }
@@ -22,19 +23,22 @@ p .precio{
     font-size: 18px;
     font-weight: normal;
 }
-
 .descuento,
 .descripcion{
     font-size: 16px;
     font-weight: normal;
 }
-
 div.top-header{
     padding: 5%;
 }
-
 header{
     background-color: #EAC926;
+}
+.bars{
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: nowrap;*/
+    align-content: space-between;
 }
 .navbar,
 .credit-card,
@@ -44,9 +48,9 @@ header{
     vertical-align: center;
     border: 1px solid #0001;
     width: 100%;
-    
 }
 .loginbar{
+    background-color: #ebebeb;
     text-align: center;
     align-content: center;
     width: 100%;
@@ -62,7 +66,7 @@ header nav{
     font-size: 12px;
 }
 header ul li{
-    list-style-type: none;
+    list-style-type:none;
 }
 header ul li a{
     text-decoration: none;
@@ -81,6 +85,23 @@ div.burger-menu i{
     padding: 15px;
     text-align: center;
 }
+.perfil{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /*justify-content:center;*/
+}
+.intereses{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*align-content: center;*/
+}
+.foto{
+    width: 45px;
+    height: 45px;
+    background-color: #FFF;
+}
 /*    footer          */
 
 footer{
@@ -92,7 +113,7 @@ footer section{
     margin-top: 10px;
 }
 footer i{
-    color:    #03264C;
+    color:    #03264C
 }
 footer p{
     color:    #666;
@@ -115,7 +136,31 @@ main section article{
     padding: 10px;
     margin : auto;
 }
-/*
+.logo{
+    width: 25vw;
+    padding: 10px;
+    
+}
+.Register{
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+
+}
+div .Register{
+    width: 100%;
+    align-content: center;
+}
+.boton{
+    width: 120px;
+    height: 65px;
+    padding: 5px;
+    margin: 5px;
+    align-content: center;
+}
+/*---------------------*/
 footer section div{
     width: 100%;
     text-align: center;
@@ -156,7 +201,6 @@ header div.top-header p{
     text-align: center;
     margin-top: 10px;
 }
-
 
 main section article .main-section-article-descripcion{
     border-top: 1px solid #ebebeb;
@@ -199,12 +243,48 @@ main section article i,
 }
 
 @media (min-width: 361px) {
-    main section article .descripcion{
-        display:none;
-} 
-  }
-  @media (min-width: 769px) {
-   article{
-        box-shadow: 10px 10px 10px 10px rgb(100, 50, 75);
+    .Register{
+        width: 95%;
+        align-content: center;
+    };
+    .intereses{
+        width: 80%;
+        align-content: center;
+    };
+    .perfil{
+        width: 80%;
+        align-content: center;
+    };
+    .boton{
+        align-content: center;
     }
-  }*/
+} 
+@media (min-width: 481px) {
+    .Register{
+        width: 90%;
+        justify-items: auto;
+    };
+    .intereses{
+        width: 75%;
+        justify-items: center;
+    };
+    .perfil{
+        width: 75%;
+        align-content: auto;
+    }
+} 
+@media (min-width: 761px) {
+    .Register{
+        width: 85%;
+        justify-items: auto;
+    };
+    .intereses{
+        width: 75%;
+        justify-items: center;
+    };
+    .perfil{
+        width: 75%;
+        align-content: auto;
+    }
+  }
+  /*---------------------*/

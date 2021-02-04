@@ -12,6 +12,9 @@ app.get('/turing', function (req, res){
 app.get('/home', function (req, res){
     res.sendFile(path.join(__dirname, './views/home.html'));
 });
+app.get('/register', function (req, res){
+    res.sendFile(path.join(__dirname, './views/register.html'));
+});
 app.get('/', function (req, res){
     res.send('Saludos Terricola')
 });
