@@ -44,57 +44,15 @@
     <main class="cuerpo-principal">
         <form action="/registro" method="POST" class="registro">
             <div class="control-formulario">
-                <label for="NombreyApellido">Nombre y Apellido:</label>
-                <input type="text" name="NombreyApellido" placeholder="escribe aqui tu nombre y apellido" class="control">
-            </div>
-            <div class="control-formulario">
                 <label for="NombreUsuario">Nombre de usuari@:</label>
                 <input type="text" name="NombreUsuario" placeholder="escribe aqui tu nombre de usuario" class="control">
             </div>
-            <div class="control-formulario">
-                <label for="NombreUsuario">Fecha de nacimiento:</label>
-                <input type="date" name="FechaNacimiento" class="control">
-            </div>
-            <div class="control-formulario">
-                <label for="Domicilio">Domicilio:</label>
-                <input type="text" name="Domicilio" placeholder="escribe aqui tu nombre de usuario" class="control">
-            </div>
-                <h4>Perfil del usuario:</h4>
-                <div class="perfil">
-                    <ul>
-                        <il><input type="radio" id="perfil" name="comprador" value="vendedor" checked="true"><label for="comprador">Comprador</label></il><br>
-                        <il><input type="radio" id="comprador" name="comprador" value="comprador"></il><label for="vendedor">Vendedor</label>
-                    </ul>
-                </div>
-                <h4>Intereses:</h4>
-                <div class="intereses">
-                    <ul>
-                        <il><input type="checkbox" id="electro" name="electro" value="electro"></il>
-                        <il><label for="electro">Electro</label><br></il>
-                        <il><input type="checkbox" id="moda" name="moda" value="moda">
-                        <il><label for="moda">Moda</label><br></il>
-                        <il><input type="checkbox" id="hogar" name="hogar" value="hogar">
-                        <il><label for="hogar">Hogar</label><br></il>
-                        <il><input type="checkbox" id="juguetes" name="juguetes" value="juguetes">
-                        <il><label for="juguetes">Juguetería</label><br></il>
-                        <il><input type="checkbox" id="vidasana" name="vidasana" value="vidasana">
-                        <il><label for="vidasana">Vida Sana</label></il>
-                    </ul>
-                </div>
-                <h4>Foto de Usuario</h4>
-                    <div class="foto">
-                    <i></i>
-                    </div>
-                    <div class="register">
-                        <label for="Password" >Clave:</label>
-                        <input type="password" name="Password" placeholder="Ingrese su clave" class="control">
-            </div>
-            <div class="control-formulario">
-                        <label for="PasswordConfirm" >Confirme su clave:</label>
-                        <input type="password" name="PasswordConfirm" placeholder="Repita su clave" class="control">
+            <div class="register">
+                <label for="Password" >Clave:</label>
+                <input type="password" name="Password" placeholder="Ingrese su clave" class="control">
             </div>
             <div class="intereses">
-                <input class="boton" type="submit">  <input class="boton" type="reset">
+                <input class="boton" type="submit">
             </div>
             </form>
         </div>
