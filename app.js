@@ -6,12 +6,12 @@ const rutaCarpetaPublica = path.resolve(__dirname, './public');
 
 app.use(express.static(rutaCarpetaPublica));
 
-app.listen (3123, () => {
+/*app.listen (3123, () => {
     console.log('Levantando un servidor con Express');
-});/*
-app.get('/turing', function (req, res){
-    res.sendFile(path.join(__dirname, './views/turing.html'));
-*/
+});*/
+app.listen(process.env.PORT || 3000, function () {
+    console.log('Servidor corriendo en el puerto 3000');
+});
 app.get('/home', function (req, res){
     res.sendFile(path.join(__dirname, './views/home.html'));
 });
