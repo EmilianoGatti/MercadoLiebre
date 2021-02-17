@@ -185,6 +185,7 @@ div .footer-container{
 }
 .cuerpo-principal{
     display:block;
+    margin-top:180px;
     padding:20px;
     background-color: #FFFFFF;
     max-width: 90%;
